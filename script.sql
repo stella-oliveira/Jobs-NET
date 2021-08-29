@@ -84,10 +84,10 @@ CREATE TABLE IF NOT EXISTS pessoa (
 ) DEFAULT CHARSET = utf8;
 
 CREATE VIEW pessoa_cadastrada AS
-SELECT pessoa.nome, cargo.nome AS cargo, pessoa.prof, DATE_FORMAT(pessoa.dataNascimento, '%d/%m/%Y') AS 'data de nascimento', estadocivil.nome AS 'estado civil', sexo.nome AS sexo, pessoa.rua, pessoa.numero, pessoa.bairro, pessoa.cidade, pessoa.uf, pessoa.cep, pessoa.telefone1, pessoa.telefone2, pessoa.celular, pessoa.contato, pessoa.email, pessoa.identidade, pessoa.cpf, veiculo.nome AS 'possui veículo', habilitacao.nome AS 'possui habilitacao'
+SELECT pessoa.nome, cargo.nome AS cargo, pessoa.prof, DATE_FORMAT(pessoa.dataNascimento, '%d/%m/%Y') AS 'data de nascimento', estadoCivil.nome AS 'estado civil', sexo.nome AS sexo, pessoa.rua, pessoa.numero, pessoa.bairro, pessoa.cidade, pessoa.uf, pessoa.cep, pessoa.telefone1, pessoa.telefone2, pessoa.celular, pessoa.contato, pessoa.email, pessoa.identidade, pessoa.cpf, veiculo.nome AS 'possui veículo', habilitacao.nome AS 'possui habilitacao'
 FROM pessoa
 INNER JOIN cargo ON pessoa.cargo_id = cargo.id
-INNER JOIN estadocivil ON pessoa.estadoCivil_id = estadocivil.id
+INNER JOIN estadoCivil ON pessoa.estadoCivil_id = estadoCivil.id
 INNER JOIN sexo ON pessoa.sexo_id = sexo.id
 INNER JOIN veiculo ON pessoa.veiculo_id = veiculo.id
 INNER JOIN habilitacao ON pessoa.habilitacao_id = habilitacao.id;
