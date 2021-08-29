@@ -1,0 +1,136 @@
+/* ---------- GERAL ---------- */
+
+* {
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+
+*:before, *:after {
+	box-sizing: inherit;
+}
+
+html, body {
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+body {
+	font-size: 14px;
+	font-family: 'Quicksand', sans-serif;
+  	background: #F8F9FA;
+	min-height: 100%;
+}
+
+main {
+	text-align: center;
+	background-color: #fff;
+	border: 1px solid transparent;
+}
+
+.container {
+	min-height: 70vh;
+}
+
+.image {
+	max-width: 80vw;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	color: #004AAD;
+	padding: 0;
+}
+
+/* ---------- HEADER ---------- */
+
+.navbar-light, footer {
+	background-color: rgb(233, 233, 233);
+	font-weight: bold;
+}
+
+.btn-primary { 
+    text-transform: uppercase;
+    border: none;
+	font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-item {
+    padding-left: 20px;
+    padding-right: 20px;
+	color: #000;
+}
+
+.btn-primary, .navbar-light .navbar-nav .nav-link.active {
+	color: #ffffff;
+	background-color: #004AAD;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn-primary, .navbar-light .navbar-nav .nav-item, .navbar-light .navbar-nav .nav-link.active {
+	border: 1px solid transparent;
+	margin: 5px;
+}
+
+.btn-primary:hover, .navbar-light .navbar-nav .nav-item:hover, .navbar-light .navbar-nav .nav-link.active:hover {
+	color: #004AAD;
+	background-color: transparent;
+	transition: 0.8s;
+    border: 1px solid #004AAD;
+}
+
+/* ---------- PÁGINA DE CADASTRO ---------- */
+
+label {
+	font-weight: bold;
+}
+
+.formulario {
+	margin: 0 auto;
+	text-align: left;
+}
+
+/* ---------- PÁGINA DE CONSULTAS ---------- */
+
+article {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+	background-color: rgb(170, 170, 170);
+	margin-bottom: 10px;
+}
+
+#consulta {
+	background-color: #fff;
+}
+
+#consulta_nome {
+	background-color: #004AAD;
+	color: #fff;
+}
+
+.container-fluid {
+	width: 60vw;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer a {
+	color: #004AAD;
+	border-bottom: 1px solid #004AAD;
+}
+
+@media (max-width: 1200px) {
+	.container-fluid { width: 100vw; } 
+}
