@@ -8,7 +8,7 @@
 <p>Para acessar o banco de dados local: acessar no navegador o <a href="http://localhost/phpmyadmin/">phpMyAdmin</a>.</p>
 
 <h2>Uso online</h2>
-<p>Será necessário hospedar o backend em um servidor (<a href="https://jobsnet-stella.000webhostapp.com/index.html" target="_blank">Exemplo</a>).</p>
+<p>Será necessário hospedar o backend e criar o banco em um servidor externo (<a href="https://jobsnet-stella.000webhostapp.com/index.html" target="_blank">Exemplo</a>).</p>
 
 <h2>Funcionalidaes</h2>
 <p>É possível cadastrar currículos e visualizá-los, inclusive com contabilização da quantidade de registros e utilização de filtro nos resultados. Funcionando 100% localmente, para funcionar online é necessário configurar o acesso ao servidor externo.</p>
